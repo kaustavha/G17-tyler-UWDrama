@@ -1,0 +1,147 @@
+blur-effect()  
+  -webkit-filter blur(arguments)
+  -moz-filter blur(arguments)
+  -o-filter blur(arguments)
+  -ms-filter blur(arguments)
+  filter blur(arguments)
+  
+body-text-holder()
+  width auto
+  padding 2% 0
+  p, li, a
+    padding 2%
+    font-size 150%
+    font-family Helvetica, serif
+  li
+    font-size 120%
+
+bgl()
+  margin 2% 0
+  background-color rgba(180, 180, 180, 0.6)
+  color rgba(45, 45, 45, 1)
+  
+bgd()
+  background-color rgba(45, 45, 45, 0.8)
+  color rgba(180, 180, 180, 1)
+  
+tooltip()
+  background #333
+  border-radius 4px
+  bottom 26px
+  color #fff
+  content attr(title)
+  left 20%
+  padding 15px 15px
+  z-index 100
+  width 220px
+
+body
+  display none
+  margin-left auto
+  margin-right auto
+  background-color grey
+
+h2
+  text-align center
+  font-size 200%
+  padding 10px
+  font-family Helvetica, sans-serif
+
+p
+  font-size 175%
+
+.poster
+  img
+    width 100%
+    min-height 800px
+    margin-top -10px //fix for backstretch
+    
+.bg
+  position fixed
+  background-image url("boarding-gate.jpg")
+  background-color rgba(0,0,0,0.5)
+  blur-effect(7px)
+  z-index -1
+  
+.title
+  opacity 0.8
+  margin-top -1%
+  top 0
+  margin-left auto
+  margin-right auto
+  padding 30px 10px
+  width 100%
+  font-size 250%
+  background-color #00bfff
+  font-family Helvetica, cursive
+  a
+    padding 1%
+    font-size 50%
+    text-decoration none
+    color orange
+    border 2px solid darkorange
+    border-radius 5px
+    margin 1%
+  a:hover
+    color yellow
+    border 2px solid orange
+    background-color darkorange
+    
+.before-dom-ready
+  z-index 1 !important
+  top 0
+
+.synopsis
+  bgl()
+  body-text-holder()
+  p
+    margin-top -3%
+  
+.info
+  body-text-holder()
+  bgd()
+ 
+ #firstInfo
+   margin-top 8%
+.cast-holder
+  height 480px
+  padding-bottom 80px  
+  h2
+    bgl()
+    
+
+.left
+  width auto
+  float left
+  margin-left 15%
+  
+.right
+  width auto
+  float right
+  margin-right 20%
+  
+.cast
+  bgl()
+  body-text-holder()
+  margin auto
+  width 370px
+  border-radius 5px
+  list-style none
+  
+footer p
+  font-size 100%
+  background-color rgba(255, 255, 255, 0.5)
+  text-align center
+  
+.stickit
+  position fixed
+
+.tooltip
+  display inline
+  position relative
+
+.tooltip:hover:after
+  tooltip()
+
+.tooltip:active
+  tooltip()
