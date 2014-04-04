@@ -17,6 +17,10 @@ $ ->
             , 300
         return
 
+    # scrolling effect for on-page nav links
+    scrollTo = (ele) ->
+        dom.animate scrollTop: ($(ele).offset().top - 300), 200
+
     # click handler to show poster
     $('#poster').click (e) ->
         e.preventDefault()       
@@ -27,12 +31,16 @@ $ ->
                 scrollAnim()                
         , 200
         return
-            
+
+    $('#synopsis').click (e) -> scrollTo('.synopsis')
+    $('#cast').click (e) -> scrollTo('.cast')
+    $('#tickets').click (e) -> scrollTo('.tickets')
+    
    #  resizing for different window widths  todo: port to css      
     if ww < 1479
-        $('.title').css "font-size", "180%"
+        $('.title h1').css "font-size", "180%"
     if ww < 900
-        $('.title').css "font-size", "150%"
+        $('.title h1').css "font-size", "150%"
         $('#firstInfo').css "margin-top", "20%"
         $('.cast-holder').css "height", "900px"
         $('.right')

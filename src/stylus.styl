@@ -7,9 +7,9 @@ blur-effect()
   
 body-text-holder()
   width auto
-  padding 2% 0
-  p, li, a
-    padding 2%
+  p, li, a, span
+    padding 40px 160px
+    text-align center
     font-size 150%
     font-family Helvetica, serif
   li
@@ -64,28 +64,34 @@ p
   z-index -1
   
 .title
+  text-align center
   opacity 0.8
   margin-top -1%
   top 0
   margin-left auto
   margin-right auto
-  padding 30px 10px
+  padding-top 10px
+  padding-bottom 25px
   width 100%
-  font-size 250%
   background-color #00bfff
   font-family Helvetica, cursive
+  h1
+    font-size 250%
   a
-    padding 1%
-    font-size 50%
+    font-size 125%
+    padding 10px
     text-decoration none
     color orange
     border 2px solid darkorange
     border-radius 5px
-    margin 1%
+    margin 10px
   a:hover
     color yellow
     border 2px solid orange
     background-color darkorange
+  #trailer:hover
+    color white
+    background-color grey
     
 .before-dom-ready
   z-index 1 !important
@@ -95,14 +101,14 @@ p
   bgl()
   body-text-holder()
   p
-    margin-top -3%
+    margin-top -40px
   
 .info
   body-text-holder()
   bgd()
  
  #firstInfo
-   margin-top 8%
+   margin-top 150px
 .cast-holder
   height 480px
   padding-bottom 80px  
@@ -127,10 +133,32 @@ p
   width 370px
   border-radius 5px
   list-style none
-  
+  padding 5px
+  li
+    padding 5px
+
+.tickets
+  bgd()
+  body-text-holder()
+  span
+    font-size 110%
+  a
+    color orange
+    font-size inherit
+    text-decoration none
+    padding 5px
+  p
+    padding 5px
+
+.map
+  bgl()
+  body-text-holder()
+  p
+    padding-bottom 0px
+
 footer p
   font-size 100%
-  background-color rgba(255, 255, 255, 0.5)
+  background-color rgba(0, 0, 0, 0.5)
   text-align center
   
 .stickit

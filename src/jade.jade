@@ -16,16 +16,19 @@ html(lang="en")
     .bg.before-dom-ready
     .poster
       img(src='./assets/poster.jpg')
-    h1.title Gate Seventeen (Boarding Soon) - A Play by Tyler Collins
-        a(class='tootltip', title='Fully funded and then some! #4 theatre project on Kickstarter :)', href="https://www.kickstarter.com/projects/665934288/gate-seventeen-boarding-soon", target='_blank') Kickstarter
+    .title
+        h1 Gate Seventeen (Boarding Soon) - A Play by Tyler Collins
+        // a(class='tootltip', title='Fully funded and then some! #4 theatre project on Kickstarter :)', href="https://www.kickstarter.com/projects/665934288/gate-seventeen-boarding-soon", target='_blank') Kickstarter
         a(class='tootltip', title='Lovingly crafted by a multi-national team of professional imaginary graphic designers', href="#", id="poster") Poster
-        a(class='tootltip', title="We're working on a new, awesomer trailer! Check back often!", href="#") Trailer
+        a(class='tootltip', title="We're working on a new, awesomer trailer! Check back often!", href="#", id='trailer') Trailer
+        a(class='tootltip', href="#", id='synopsis') Synopsis
+        a(class='tootltip', href="#", id='cast') Cast
+        a(class='tootltip', href="#", id='tickets') Tickets
     .info#firstInfo 
       p Gate Seventeen (Boarding Soon)" draws its inspiration from the works of Harold Pinter and Samuel Beckett. Classic absurdist theatre is re-imagined and brought into the brave new world of the 21st century. 
     .synopsis
       h2 Synopsis:
         hr
-      br
       p A variety of passengers meet in a large, sprawling airport at the crack of dawn, awaiting to board their flight to Vancouver. As time passes, they each uncover dark secrets about each other about where they're going and where they're coming from. As the truths they discover become more ridiculous and alarming, the dream of eventually boarding the airplane becomes nothing more than a distant fantasy. Finally, each passenger must face a difficult choice; and in the end, only one of them will have the opportunity to experience what it's truly like to fly in the clouds.
     .info
       p The journey is both wildly funny and carefully poignant, crafted by such classic theatre as "Waiting for Godot", "The Homecoming", and "Endgame". Full of unbelievable and hilarious characters, classic Vaudeville routines, and moments of unthinkable and extreme horror, "Gate Seventeen (Boarding Soon)" is a show like nothing you ever imagined.  
@@ -36,7 +39,11 @@ html(lang="en")
         +cast(['Ian...........TO BE ANNOUNCED', 'Lizzie......TO BE ANNOUNCED', 'Cody.......Christopher Hemming', 'Mombo Monster....Antony Discenza', 'Gertrude....Sam Bogart', 'Rachel....Maddy Heys', 'The Captain....Lucas DeLuca'])
       .right 
         +cast(['Written by....Tyler Collins', 'Stage Manager....Sandy Thi', 'Costume Design....Sarah Beattie', 'Scenic Design....Tyler Collins', 'Web/graphic Design....Kaustav Haldar', 'Theatre Manager (QEPT)...Lori Coletta', 'Directed by....Tyler Collins'])
-    .info
+    .tickets
+      p Tickets go on sale to the general public on April 18th at 8:00pm. 
+      p For enquiries, contact
+        a(href='mailto:gate17show@gmail.com') gate17show@gmail.com 
+    .map
       p Produced in Participation with Queen Elizabeth Park Theatre, MCAT Gems, Kickstarter, Folkmanis Puppets, Tyler Collins, and The Town of Oakville.      
       include map.html
     script(src='./assets/scripts.js')

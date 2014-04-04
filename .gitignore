@@ -1,0 +1,7 @@
+index.html
+node_modules/
+assets/*
+!assets/boarding-gate.jpg
+!assets/Twisted-Airplane.jpg
+!assets/Twisted-Airplane.xcf
+!assets/poster.jpg
